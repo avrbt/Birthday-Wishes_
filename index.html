@@ -27,8 +27,34 @@
 	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet/less" href="cake.less">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
-</head>
+	<style>
+  #birthdayMessage {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 30px;
+    color: #FF4C8B; /* Hot pinkish */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    animation: fadeZoom 1.5s ease-in-out;
+  }
 
+  @keyframes fadeZoom {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+</style>
+</head>
+<h1 id="birthdayMessage"></h1>
+<script>
+  const name = "Bhavya Tiwari";
+  document.getElementById("birthdayMessage").textContent = `🎉 Happy Birthday ${name}! 🎂🎈`;
+</script>
 <body>
 	<div class="loading"></div>
 	<audio class="song" controls loop>
@@ -36,22 +62,22 @@
 	   Your browser isn't invited for super fun audio time.
     </audio>
     <div class="balloons text-center" id="b1">
-    	<h2 style="color:#F2B300;">H</h2>
+    	<h2 style="color:#F2B300;">HBD</h2>
     </div>
     <div class="balloons text-center" id="b2">
     	<h2 style="color:#0719D4;">B</h2>
     </div>
 	<div class="balloons text-center" id="b3">
-    	<h2 style="color:#D14D39;">D</h2>
+    	<h2 style="color:#D14D39;">H</h2>
     </div>
 	<div class="balloons text-center" id="b4">
-    	<h2 style="color:#8FAD00;">X</h2>
+    	<h2 style="color:#8FAD00;">A</h2>
     </div>
 	<div class="balloons text-center" id="b5">
-    	<h2 style="color:#8377E4;">O</h2>
+    	<h2 style="color:#8377E4;">V</h2>
     </div>
     <div class="balloons text-center" id="b6">
-    	<h2 style="color:#99C96A;">L</h2>
+    	<h2 style="color:#99C96A;">Y</h2>
     </div>
     <div class="balloons text-center" id="b7">
     	<h2 style="color:#20CFB4;">A</h2>
